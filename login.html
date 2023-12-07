@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function verificarLogin() {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            if (email === "usuario" && senha === "senha123") {
+                alert("Login Efetuado com sucesso !");
+            } else {
+                alert("Usúario ou senha incorretos !");
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>   
+    <form id="login" onsubmit="return verificarLogin()">
+    <label for="email"> Email:</label>
+    <input type="text" id="email" name="email" required><br><br>
+
+    <label for="senha">senha</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

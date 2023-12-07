@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Jogos</title>
+    <style>
+    </style>
+</head>
+<body class="body-style4">
+        <form action="inserirjogos.php" method="post">
+            <div class="content-box-circular2">
+                <div class="form-group">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="75" width="100" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>
+                    </div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" name="nome"><br>                
+                    <label for="plataforma_id">Plataforma ID:</label>
+                    <input type="number" class="form-control" name="plataforma_id"><br>
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" class="form-control" name="descricao"><br>
+                    <label for="estado">Estado:</label>
+                    <input type="text" class="form-control" name="estado"><br>    
+                    <div>
+                        <button type="submit" class="btn btn-primary" value="Efetuar">Efetuar<br>
+                        <button type="button" class="btn btn-secondary" value="Cancelar">Cancelar<br>
+                    </div> 
+                </div>                
+            </div>           
+        </form>
+</body>
+</html>
